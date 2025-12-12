@@ -1,6 +1,6 @@
 {
   "name": "@estruyf/ghostwriter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-powered technical writing agents for VS Code, GitHub Copilot, and Claude",
   "main": "dist/index.js",
   "bin": {
