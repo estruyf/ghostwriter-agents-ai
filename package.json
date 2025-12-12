@@ -34,10 +34,11 @@
   "author": "Elio Struyf",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/eliostruyf/ghostwriter-agents-ai"
+    "type": "git",
+    "url": "https://github.com/estruyf/ghostwriter-agents-ai"
   },
   "bugs": {
-    "url": "https://github.com/eliostruyf/ghostwriter-agents-ai/issues"
+    "url": "https://github.com/estruyf/ghostwriter-agents-ai/issues"
   },
   "homepage": "https://github.com/eliostruyf/ghostwriter-agents-ai#readme",
   "engines": {
