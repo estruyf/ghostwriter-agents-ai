@@ -4,7 +4,8 @@
   "description": "AI-powered technical writing agents for VS Code, GitHub Copilot, and Claude",
   "main": "dist/index.js",
   "bin": {
-    "ghostwriter": "dist/cli.js"
+    "ghostwriter": "dist/cli.js",
+    "@estruyf/ghostwriter": "dist/cli.js"
   },
   "files": [
     "dist",
