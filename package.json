@@ -41,10 +41,7 @@
   },
   "homepage": "https://github.com/eliostruyf/ghostwriter-agents-ai#readme",
   "engines": {
-    "node": ">=22.0.0"
-  },
-  "dependencies": {
-    "@types/node": "^20.0.0"
+    "node": ">=20.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
