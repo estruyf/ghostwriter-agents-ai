@@ -84,9 +84,7 @@ function installForClaude(agents: AgentFile[]): number {
 
   let installed = 0;
   for (const agent of agents) {
-    // Claude uses .md extension without .ghostwriter
-    const claudeName = agent.name.replace(".ghostwriter.md", ".md");
-    const targetPath = path.join(claudeDir, claudeName);
+    const targetPath = path.join(claudeDir, agent.name);
     fs.writeFileSync(targetPath, agent.content, "utf-8");
     log("🤖", targetPath, "Claude agent installed");
     installed++;

@@ -35,17 +35,20 @@ npx @estruyf/ghostwriter --claude
 
 After installation:
 1. Restart your editor
-2. Start using agents: `@context`, `@interviewer`, `@writer`, `@reviewer`,
-   `@voice`
+2. Start using agents depends on the AI tool you use (see Platform-Specific
+   Setup)
+   - [VS Code](#vs-code)
+   - [GitHub Copilot CLI](#github-copilot-cli)
+   - [Claude](#claude)
 
 ## Agents
 
-### 🔄 Context Loader (`@context`)
+### 🔄 Context Loader (`@ghostwriter-context`)
 Loads your current work-in-progress article into context for further commands.
 
 **Use when:** Starting a new editing session or switching between drafts.
 
-### 🎤 Interviewer (`@interviewer`)
+### 🎤 Interviewer (`@ghostwriter-interviewer`)
 Conducts structured technical interviews to gather material for blog posts. Asks
 one question at a time, collects code snippets, error logs, and real-world
 examples.
@@ -54,13 +57,13 @@ examples.
 recent technical work.
 
 **Workflow:**
-1. Start: `@interviewer`
+1. Start: `@ghostwriter-interviewer`
 2. Answer questions naturally, sharing code/logs when asked
 3. Say "stop" when finished
 4. Request transcript: "Can you provide the interview transcript?"
 5. Save as `INTERVIEW.md`
 
-### ✍️ Writer (`@writer`)
+### ✍️ Writer (`@ghostwriter-writer`)
 Expands working outlines or drafts into comprehensive, detailed articles while
 maintaining your voice and narrative flow.
 
@@ -72,7 +75,7 @@ maintaining your voice and narrative flow.
 - Explains *why* code does what it does
 - Maintains narrative thread
 
-### 🔍 Reviewer (`@reviewer`)
+### 🔍 Reviewer (`@ghostwriter-reviewer`)
 Reviews articles against editorial guidelines, providing concrete, actionable
 feedback.
 
@@ -85,7 +88,7 @@ feedback.
 - Code quality and citations
 - Missing resources section
 
-### 🎨 Voice Analyzer (`@voice`)
+### 🎨 Voice Analyzer (`@ghostwriter-voice`)
 Analyzes your existing writing to create a reusable style guide that other
 agents can follow.
 
@@ -131,39 +134,39 @@ Ghostwriter agents follow the **"cozy web"** editorial approach:
 
 ```bash
 # 1. Conduct interview
-@interviewer
+@ghostwriter-interviewer
 # ... answer questions, share code/logs
 # Save transcript to INTERVIEW.md
 
 # 2. Create initial outline from interview
-@writer Please create an outline from INTERVIEW.md
+@ghostwriter-writer Please create an outline from INTERVIEW.md
 
 # 3. Expand sections
-@writer Expand the "Debugging the Issue" section
+@ghostwriter-writer Expand the "Debugging the Issue" section
 
 # 4. Review draft
-@context  # Load current draft
-@reviewer
+@ghostwriter-context  # Load current draft
+@ghostwriter-reviewer
 
 # 5. Polish based on feedback
-@writer Address reviewer feedback: add more context to the error handling section
+@ghostwriter-writer Address reviewer feedback: add more context to the error handling section
 
 # 6. Final voice check (optional)
-@voice Analyze my previous articles in ./content/posts
+@ghostwriter-voice Analyze my previous articles in ./content/posts
 ```
 
 ### From Existing Outline
 
 ```bash
 # 1. Load outline
-@context
+@ghostwriter-ghostwriter-context
 
 # 2. Expand
-@writer Expand this outline into a full article
+@ghostwriter-writer Expand this outline into a full article
 
 # 3. Review and iterate
-@reviewer
-@writer Fix the issues noted by the reviewer
+@ghostwriter-reviewer
+@ghostwriter-writer Fix the issues noted by the reviewer
 ```
 
 ## Platform-Specific Setup
@@ -174,6 +177,11 @@ Agents are installed to `.github/agents/` in your project.
 
 Access via the agent selector in the chat view of GitHub Copilot.
 
+<div align="center">
+  <img src="assets/vscode-agents.png" alt="VS Code Agents" width="300">
+  <p><em>VS Code Agents</em></p>
+</div>
+
 ### GitHub Copilot CLI
 
 Agents are installed to `~/.copilot/agents/`.
@@ -181,11 +189,27 @@ Agents are installed to `~/.copilot/agents/`.
 Access them by invoking Copilot CLI in your terminal, and using the `/agent`
 command to select the desired agent you want to interact with.
 
+<div align="center">
+  <img src="assets/copilot-agents.png" alt="Copilot Agents" width="600">
+  <p><em>Copilot Agents</em></p>
+</div>
+
 ### Claude
 
 Agents are installed to `~/.claude/agents/`.
 
-Access via: `@context`, `@interviewer`, etc. in Claude Desktop or CLI.
+In the Claude CLI, use the following commands to interact with agents:
+
+- `@agent-ghostwriter-interviewer`
+- `@agent-ghostwriter-writer`
+- `@agent-ghostwriter-reviewer`
+- `@agent-ghostwriter-context`
+- `@agent-ghostwriter-voice`
+
+<div align="center">
+  <img src="assets/claude-agents.png" alt="Claude Agents" width="600">
+  <p><em>Claude Agents</em></p>
+</div>
 
 ## Command Reference
 
