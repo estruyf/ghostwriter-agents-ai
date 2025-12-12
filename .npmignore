@@ -1,0 +1,33 @@
+# Source files
+src/
+tsconfig.json
+
+# Build artifacts
+*.tsbuildinfo
+
+# Development
+.git
+.github/
+.vscode/
+.DS_Store
+
+# Documentation (kept in package)
+# README.md - included
+# LICENSE - included
+
+# Tests
+test/
+tests/
+*.test.ts
+*.spec.ts
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+azure-pipelines.yml
+
+# Misc
+.editorconfig
+.eslintrc*
+.prettierrc*
+coverage/

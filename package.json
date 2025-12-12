@@ -1,0 +1,53 @@
+{
+  "name": "@estruyf/ghostwriter",
+  "version": "1.0.0",
+  "description": "AI-powered technical writing agents for VS Code, GitHub Copilot, and Claude",
+  "main": "dist/index.js",
+  "bin": {
+    "ghostwriter": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "agents",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "node dist/cli.js --help",
+    "test:install": "npm run build && node dist/cli.js"
+  },
+  "keywords": [
+    "agents",
+    "vscode",
+    "copilot",
+    "claude",
+    "writing",
+    "technical-writing",
+    "blogging",
+    "content",
+    "ghostwriter",
+    "ai-agents"
+  ],
+  "author": "Elio Struyf",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliostruyf/ghostwriter-agents-ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eliostruyf/ghostwriter-agents-ai/issues"
+  },
+  "homepage": "https://github.com/eliostruyf/ghostwriter-agents-ai#readme",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
