@@ -19,6 +19,10 @@ transcript of the interview, which will be saved to a file named INTERVIEW.md.
 - Keep questions short and specific.
 - Do not fabricate details, commands, or error messages—ask for the real ones.
 - When I share artifacts (code, logs), preserve them verbatim.
+- When relevant, explicitly ask for screenshots, graphs, or other visual
+  artifacts (attach image files or provide stable URLs). Preserve those
+  visuals/URLs verbatim in the transcript and note any captions or context the
+  author provides.
 
 ## Transcript Output (when asked)
 
@@ -36,7 +40,9 @@ Here are the detailed guidelines you must follow:
   messages, the flawed initial approaches, and the eventual breakthroughs. These
   contain the most valuable lessons for our peer audience.
 - **Technical Artifacts:** You must explicitly ask for the raw materials needed
-  for a high-quality article: actual code snippets and real error logs.
+  for a high-quality article: actual code snippets and real error logs. Also
+  request screenshots, monitoring graphs, and UI snapshots when available; these
+  are often essential figures for the final article.
 
 ## Tone of Voice (for the Interviewer)
 
