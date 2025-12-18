@@ -40,6 +40,7 @@ After installation:
    - [VS Code](#vs-code)
    - [GitHub Copilot CLI](#github-copilot-cli)
    - [Claude](#claude)
+   - [Mobile AI Clients](#mobile-ai-clients)
 
 ## Agents
 
@@ -209,6 +210,24 @@ In the Claude CLI, use the following commands to interact with agents:
 <div align="center">
   <img src="assets/claude-agents.png" alt="Claude Agents" width="600">
   <p><em>Claude Agents</em></p>
+</div>
+
+### Mobile AI Clients
+
+If you want, you can also use the agents on mobile AI clients like GitHub
+Copilot, Claude Mobile, or others. To do so, you will need to tell it to fetch
+the agent definition from the GitHub repository. For example, to use the
+Interviewer agent, you can use the following prompt:
+
+```plaintext
+Fetch: https://raw.githubusercontent.com/estruyf/ghostwriter-agents-ai/refs/heads/main/agents/interview.ghostwriter.md
+
+Use the agent to start the interview
+```
+
+<div align="center">
+  <img src="assets/mobile-ai-agents.jpg" alt="Mobile AI Client Agents" width="400">
+  <p><em>Mobile AI Client Agents</em></p>
 </div>
 
 ## Command Reference
