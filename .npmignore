@@ -10,6 +10,7 @@ tsconfig.json
 .github/
 .vscode/
 .DS_Store
+scripts/
 
 # Documentation (kept in package)
 # README.md - included
