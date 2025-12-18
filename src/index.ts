@@ -93,6 +93,78 @@ function installForClaude(agents: AgentFile[]): number {
   return installed;
 }
 
+function uninstallForVSCode(): number {
+  const targetDir = path.join(process.cwd(), ".github", "agents");
+
+  if (!fs.existsSync(targetDir)) {
+    log("ℹ️", "No VS Code agents found to uninstall");
+    return 0;
+  }
+
+  const files = fs.readdirSync(targetDir).filter(f => f.endsWith(".ghostwriter.md"));
+  let removed = 0;
+
+  for (const file of files) {
+    const filePath = path.join(targetDir, file);
+    fs.unlinkSync(filePath);
+    log("🗑️", path.relative(process.cwd(), filePath), "VS Code agent removed");
+    removed++;
+  }
+
+  // Remove directory if empty
+  if (fs.readdirSync(targetDir).length === 0) {
+    fs.rmdirSync(targetDir);
+    const githubDir = path.join(process.cwd(), ".github");
+    if (fs.existsSync(githubDir) && fs.readdirSync(githubDir).length === 0) {
+      fs.rmdirSync(githubDir);
+    }
+  }
+
+  return removed;
+}
+
+function uninstallForCopilot(): number {
+  const targetDir = path.join(os.homedir(), ".copilot", "agents");
+
+  if (!fs.existsSync(targetDir)) {
+    log("ℹ️", "No Copilot agents found to uninstall");
+    return 0;
+  }
+
+  const files = fs.readdirSync(targetDir).filter(f => f.endsWith(".ghostwriter.md"));
+  let removed = 0;
+
+  for (const file of files) {
+    const filePath = path.join(targetDir, file);
+    fs.unlinkSync(filePath);
+    log("🗑️", filePath, "Copilot agent removed");
+    removed++;
+  }
+
+  return removed;
+}
+
+function uninstallForClaude(): number {
+  const targetDir = path.join(os.homedir(), ".claude", "agents");
+
+  if (!fs.existsSync(targetDir)) {
+    log("ℹ️", "No Claude agents found to uninstall");
+    return 0;
+  }
+
+  const files = fs.readdirSync(targetDir).filter(f => f.endsWith(".ghostwriter.md"));
+  let removed = 0;
+
+  for (const file of files) {
+    const filePath = path.join(targetDir, file);
+    fs.unlinkSync(filePath);
+    log("🗑️", filePath, "Claude agent removed");
+    removed++;
+  }
+
+  return removed;
+}
+
 export async function installAgents(platforms: Platform[]): Promise<void> {
   console.log("");
   log("✍️", ` ${COLORS.blue}Ghostwriter Agents Installer${COLORS.reset}`);
@@ -133,5 +205,38 @@ export async function installAgents(platforms: Platform[]): Promise<void> {
   console.log(
     `${COLORS.dim}- Restart your editor to load the new agents${COLORS.reset}`
   );
+  console.log("");
+}
+
+export async function uninstallAgents(platforms: Platform[]): Promise<void> {
+  console.log("");
+  log("✍️", ` ${COLORS.blue}Ghostwriter Agents Uninstaller${COLORS.reset}`);
+  console.log("");
+
+  let totalRemoved = 0;
+
+  for (const platform of platforms) {
+    switch (platform) {
+      case "vscode":
+        totalRemoved += uninstallForVSCode();
+        break;
+      case "copilot":
+        totalRemoved += uninstallForCopilot();
+        break;
+      case "claude":
+        totalRemoved += uninstallForClaude();
+        break;
+    }
+  }
+
+  console.log("");
+  if (totalRemoved > 0) {
+    log(
+      "✅",
+      `${COLORS.green}Done! Removed ${totalRemoved} agents from ${platforms.length} platform(s)${COLORS.reset}`
+    );
+  } else {
+    log("ℹ️", "No agents were found to uninstall");
+  }
   console.log("");
 }

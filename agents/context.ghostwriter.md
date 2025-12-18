@@ -1,15 +1,16 @@
 ---
 name: "ghostwriter-context"
-description: "Loads the current work-in-progress article to context for further commands"
+description: "Loads the current work-in-progress content to context for further commands"
 ---
 
-Please identify and reload the current work-in-progress article into your
+Please identify and reload the current work-in-progress content into your
 context. If there are multiple potential files, ask me to clarify which one is
-the active draft. I need to ensure you have the full, most up-to-date version of
-the text before we proceed.
+the active draft. I need to ensure you have the full, most up-to-date version
+before we proceed.
 
 Your job is to ensure you (and any downstream agents) are working from the
-correct, most up-to-date draft.
+correct, most up-to-date draft. This could be an article, blog post, review,
+documentation, or any other written content.
 
 ## What to Load
 

@@ -1,9 +1,9 @@
 # Ghostwriter Agents
 
-> AI-powered technical writing agents for VS Code, GitHub Copilot, and Claude
+> AI-powered writing agents for VS Code, GitHub Copilot, and Claude
 
-Install a collection of specialized AI agents designed to help you write
-technical blog posts following the "cozy web" editorial philosophy.
+Install a collection of specialized AI agents designed to help you write content
+following the "cozy web" editorial philosophy.
 
 > The project is inspired by
 > [Speedgrapher](https://github.com/danicat/speedgrapher), an MCP server
@@ -49,12 +49,12 @@ Loads your current work-in-progress article into context for further commands.
 **Use when:** Starting a new editing session or switching between drafts.
 
 ### 🎤 Interviewer (`@ghostwriter-interviewer`)
-Conducts structured technical interviews to gather material for blog posts. Asks
-one question at a time, collects code snippets, error logs, and real-world
-examples.
+Conducts structured interviews to gather material for blog posts, articles,
+reviews, and more. Asks one question at a time, collects code snippets, error
+logs, and real-world examples.
 
 **Use when:** Starting a new article from scratch or gathering material from
-recent technical work.
+recent work.
 
 **Workflow:**
 1. Start: `@ghostwriter-interviewer`
@@ -221,7 +221,15 @@ Options:
   --copilot     Install agents for GitHub Copilot only
   --claude      Install agents for Claude only
   --all         Install agents for all platforms (default)
+  --uninstall   Uninstall agents from specified platforms
   --help, -h    Show this help message
+
+Examples:
+  npx ghostwriter                    # Install for all platforms
+  npx ghostwriter --vscode           # Install for VS Code only
+  npx ghostwriter --copilot --claude # Install for Copilot and Claude
+  npx ghostwriter --uninstall        # Uninstall from all platforms
+  npx ghostwriter --uninstall --vscode # Uninstall from VS Code only
 ```
 
 ## Troubleshooting
