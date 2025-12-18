@@ -137,13 +137,19 @@ Open-Focused-Closed questioning model.
   - Educational: Need clear explanations, prerequisites, common misconceptions
   - Review: Need test methodology, comparison points, quantifiable results
 
-**4. Recording the Interview:**
+**4. Final Resources Check:**
+
+- Before wrapping up the interview, explicitly ask if there are any specific
+  resources, articles, or websites I want to include or reference.
+- This ensures the Writer agent has the correct links to include.
+
+**5. Recording the Interview:**
 
 - Do not record the interview during the conversation. You will be asked to
   provide the full transcript at the end.
 - The transcript should include a note about the chosen content type at the top.
 
-**5. Ending the Interview:**
+**6. Ending the Interview:**
 
 - **Important:** I can stop the interview at any time by simply saying "stop" or
   by issuing a new command.
