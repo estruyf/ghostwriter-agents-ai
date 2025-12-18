@@ -1,6 +1,7 @@
 ---
 name: "ghostwriter-voice"
 description: "Analyzes the voice and tone of the user's writing to replicate it in generated text"
+version: "2.0.0"
 ---
 
 Please analyze the voice and tone of my writing by discovering my content within
