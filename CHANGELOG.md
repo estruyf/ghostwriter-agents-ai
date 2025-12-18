@@ -15,6 +15,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - CHANGELOG.md file to track version history
 - Content type selection in interviewer agent (Technical/Tutorial,
   General/Narrative, Educational/Explainer, Review/Analysis)
+- Added versioning to agents metadata
 
 ### Changed
 - **BREAKING:** Interviewer agent now asks for content type as first question
