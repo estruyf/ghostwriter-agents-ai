@@ -40,8 +40,7 @@ After installation:
    - [VS Code](#vs-code)
    - [GitHub Copilot CLI](#github-copilot-cli)
    - [Claude](#claude)
-   - [GitHub Copilot Web](#github-copilot-web)
-   - [Mobile AI Clients](#mobile-ai-clients)
+   - [Web and Mobile AI Clients](#web-and-mobile-ai-clients)
 
 ## Agents
 
