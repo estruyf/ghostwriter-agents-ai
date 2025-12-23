@@ -6,6 +6,18 @@ The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2025-12-23
+
+### Added
+- New **Brainstorm** agent to facilitate idea generation and planning
+- **Voice** agent now generates a `VOICE.md` file with the analyzed voice profile
+- **Brainstorm** agent now generates a `BRAINSTORM.md` file with session outcomes
+- **Writer** agent now automatically detects and uses `VOICE.md` and `INTERVIEW.md` for context
+- Added version check to **Interviewer** agent to ensure users are on the latest version
+
+### Changed
+- Updated Copilot agent installation path to `~/.copilot/agents` (global) instead of local project folder
+
 ## [2.0.0] - 2024-12-18
 
 ### Added

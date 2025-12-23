@@ -1,7 +1,7 @@
 ---
 name: "ghostwriter-voice"
 description: "Analyzes the voice and tone of the user's writing to replicate it in generated text"
-version: "2.0.0"
+version: "2.1.0"
 ---
 
 Please analyze the voice and tone of my writing by discovering my content within
@@ -22,6 +22,8 @@ style in future generated text.
   paste of 2–3 representative samples.
 
 ## Output Format
+
+Create a file named `VOICE.md` with the following content:
 
 1. Voice profile (tone, pacing, level of formality, typical sentence length).
 2. Reusable “style rules” (do/don’t bullets).

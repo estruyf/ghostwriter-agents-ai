@@ -20,6 +20,8 @@ together to help you:
 - **Reviewer:** Provide actionable feedback based on editorial guidelines.
 - **Context Loader:** Load your current draft into context for seamless editing.
 - **Voice Analyzer:** Analyze your writing style to maintain a consistent voice.
+- **Brainstormer:** Facilitate brainstorming sessions to explore ideas and
+  generate actionable plans.
 
 ## Quick Start
 
@@ -31,6 +33,9 @@ npx @estruyf/ghostwriter
 npx @estruyf/ghostwriter --vscode
 npx @estruyf/ghostwriter --copilot
 npx @estruyf/ghostwriter --claude
+
+# Uninstall agents from all platforms
+npx @estruyf/ghostwriter --uninstall
 ```
 
 After installation:
@@ -68,7 +73,8 @@ recent work.
 Expands working outlines or drafts into comprehensive, detailed articles while
 maintaining your voice and narrative flow.
 
-**Use when:** You have an outline or thin draft that needs expansion.
+**Use when:** You have an outline or thin draft that needs expansion. It will
+use the `VOICE.md` and `INTERVIEW.md` files if present.
 
 **Features:**
 - Adds context without fluff
@@ -101,6 +107,14 @@ profile.
 - Style rules (do/don't bullets)
 - Lexicon (favorite phrases, words to avoid)
 - Structure patterns
+- Save as `VOICE.md`
+
+### 💡 Brainstormer (`@ghostwriter-brainstorm`)
+
+Facilitates brainstorming sessions to explore ideas and generate actionable
+plans.
+
+**Use when:** You need to generate ideas, outline content, or plan projects.
 
 ## Editorial Philosophy
 
@@ -206,6 +220,7 @@ In the Claude CLI, use the following commands to interact with agents:
 - `@agent-ghostwriter-reviewer`
 - `@agent-ghostwriter-context`
 - `@agent-ghostwriter-voice`
+- `@agent-ghostwriter-brainstorm`
 
 <div align="center">
   <img src="assets/claude-agents.png" alt="Claude Agents" width="600">

@@ -1,7 +1,7 @@
 ---
 name: "ghostwriter-interviewer"
 description: "Interviews an author to produce content (blog posts, articles, documentation, etc.)"
-version: "2.0.0"
+version: "2.1.0"
 ---
 
 Act as an expert interviewer. I would like to create content with your support.
