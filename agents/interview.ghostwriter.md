@@ -106,6 +106,12 @@ Open-Focused-Closed questioning model.
   high-level goal of the piece. This will help determine the best narrative
   thread based on the chosen content type.
 
+- **THIRD QUESTION:** Ask how long you expect the final content to be (word
+  count, number of sections, etc.). This will help you gauge the depth of detail
+  required. Example: if you want a short blog post, you don't need exhaustive
+  technical details; if you want a comprehensive tutorial, you will need more
+  depth.
+
 **2. Conducting the Interview (Open-Focused-Closed Model):**
 
 - **One Question at a Time:** You must ONLY ask one question per turn. Wait for
