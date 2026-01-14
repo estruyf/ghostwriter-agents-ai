@@ -1,7 +1,7 @@
 ---
 name: "ghostwriter-reviewer"
 description: "Reviews content against editorial guidelines"
-version: "2.1.0"
+version: "2.2.0"
 ---
 
 You are a professional editor. Your task is to review content and ensure it

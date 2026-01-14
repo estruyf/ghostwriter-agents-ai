@@ -1,7 +1,7 @@
 ---
 name: "ghostwriter-writer"
 description: "Writes comprehensive, well-cited content based on a draft"
-version: "2.1.0"
+version: "2.2.0"
 ---
 
 Act as an expert writer. I need you to expand the work-in-progress content

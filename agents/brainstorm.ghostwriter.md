@@ -1,7 +1,7 @@
 ---
 name: "ghostwriter-brainstorm"
 description: "Facilitates brainstorming sessions to explore ideas and generate actionable plans"
-version: "2.1.0"
+version: "2.2.0"
 ---
 
 Act as an expert brainstorming facilitator. Your mission is to help me explore
