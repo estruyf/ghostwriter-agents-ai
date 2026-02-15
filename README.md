@@ -20,10 +20,13 @@ to help you:
 - **Reviewer:** Provide actionable feedback based on editorial guidelines.
 - **Context Loader:** Load your current draft into context for seamless editing.
 - **Voice Analyzer:** Analyze your writing style to maintain a consistent voice.
- - **Product Moral Compass:** Guide thoughtful decision-making before building
+- **Brainstormer:** Facilitate brainstorming sessions to explore ideas and
+  generate actionable plans.
+- **Product Moral Compass:** Guide thoughtful decision-making before building
   software — interviews the idea, researches existing options (open source and
   paid), and recommends whether to build, contribute, or use an existing
   solution.
+
 ## Quick Start
 
 ```bash
@@ -34,6 +37,9 @@ npx @estruyf/ghostwriter
 npx @estruyf/ghostwriter --vscode
 npx @estruyf/ghostwriter --copilot
 npx @estruyf/ghostwriter --claude
+
+# Uninstall agents from all platforms
+npx @estruyf/ghostwriter --uninstall
 ```
 
 After installation:
@@ -43,7 +49,7 @@ After installation:
    - [VS Code](#vs-code)
    - [GitHub Copilot CLI](#github-copilot-cli)
    - [Claude](#claude)
-   - [Mobile AI Clients](#mobile-ai-clients)
+   - [Web and Mobile AI Clients](#web-and-mobile-ai-clients)
 
 ## Agents
 
@@ -71,7 +77,8 @@ recent work.
 Expands working outlines or drafts into comprehensive, detailed articles while
 maintaining your voice and narrative flow.
 
-**Use when:** You have an outline or thin draft that needs expansion.
+**Use when:** You have an outline or thin draft that needs expansion. It will
+use the `VOICE.md` and `INTERVIEW.md` files if present.
 
 **Features:**
 - Adds context without fluff
@@ -104,6 +111,14 @@ profile.
 - Style rules (do/don't bullets)
 - Lexicon (favorite phrases, words to avoid)
 - Structure patterns
+- Save as `VOICE.md`
+
+### 💡 Brainstormer (`@"Ghostwriter Brainstormer (agent)"`)
+
+Facilitates brainstorming sessions to explore ideas and generate actionable
+plans.
+
+**Use when:** You need to generate ideas, outline content, or plan projects.
 
 ### 🧭 Product Moral Compass (`@"Ghostwriter Product Moral Compass (agent)"`)
 Guides developers through thoughtful decision-making before building software.
@@ -229,6 +244,7 @@ In the Claude CLI, use the following commands to interact with agents:
 - `@"Ghostwriter Reviewer (agent)"`
 - `@"Ghostwriter Context (agent)"`
 - `@"Ghostwriter Voice (agent)"`
+- `@"Ghostwriter Brainstormer (agent)"`
 - `@"Ghostwriter Product Moral Compass (agent)"`
 
 <div align="center">
@@ -236,12 +252,22 @@ In the Claude CLI, use the following commands to interact with agents:
   <p><em>Claude Agents</em></p>
 </div>
 
-### Mobile AI Clients
+### Web and Mobile AI Clients
 
 If you want, you can also use the agents on mobile AI clients like GitHub
 Copilot, Claude Mobile, or others. To do so, you will need to tell it to fetch
-the agent definition from the GitHub repository. For example, to use the
-Interviewer agent, you can use the following prompt:
+the agent definition from the GitHub repository.
+
+For GitHub Copilot Web, you can use the following link:
+
+<a
+href="https://github.com/copilot?prompt=Fetch%3A%20https%3A%2F%2Fraw.githubusercontent.com%2Festruyf%2Fghostwriter-agents-ai%2Frefs%2Fheads%2Fmain%2Fagents%2Finterview.ghostwriter.md%0A%0AUse%20the%20agent%20to%20start%20the%20interview"
+target="_blank" class="" aria-label="Run this prompt in Copilot Chat"
+aria-describedby="2929304522" style="text-decoration:none;"> Start the interview
+in GitHub Copilot Web
+</a>
+
+In other clients, use the following prompt to fetch the agent definition:
 
 ```plaintext
 Fetch: https://raw.githubusercontent.com/estruyf/ghostwriter-agents-ai/refs/heads/main/agents/interview.ghostwriter.md

@@ -1,7 +1,7 @@
 ---
 name: "Ghostwriter Context"
 description: "Loads the current work-in-progress content to context for further commands"
-version: "2.0.0"
+version: "2.2.0"
 ---
 
 Please identify and reload the current work-in-progress content into your

@@ -6,13 +6,36 @@ The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.1.0] - 2026-02-15
+## [2.3.0] - 2026-02-15
 
 ### Added
 - `product-moral-compass.ghostwriter.md` — Product Moral Compass agent: guides
   developers through decision-making before building software; performs idea
   interviews, researches existing open source and commercial options, and
   recommends whether to build, contribute, use, or combine solutions.
+
+## [2.2.0] - 2026-01-14
+
+### Added
+- **Interviewer** agent now asks about expected content length (word count,
+  sections) as third question to better gauge the depth of detail required
+
+## [2.1.0] - 2025-12-23
+
+### Added
+- New **Brainstorm** agent to facilitate idea generation and planning
+- **Voice** agent now generates a `VOICE.md` file with the analyzed voice
+  profile
+- **Brainstorm** agent now generates a `BRAINSTORM.md` file with session
+  outcomes
+- **Writer** agent now automatically detects and uses `VOICE.md` and
+  `INTERVIEW.md` for context
+- Added version check to **Interviewer** agent to ensure users are on the latest
+  version
+
+### Changed
+- Updated Copilot agent installation path to `~/.copilot/agents` (global)
+  instead of local project folder
 
 ## [2.0.0] - 2025-12-18
 
