@@ -1,5 +1,5 @@
 ---
-name: "ghostwriter-reviewer"
+name: "Ghostwriter Reviewer"
 description: "Reviews content against editorial guidelines"
 version: "2.0.0"
 ---

@@ -1,5 +1,5 @@
 ---
-name: "ghostwriter-voice"
+name: "Ghostwriter Voice"
 description: "Analyzes the voice and tone of the user's writing to replicate it in generated text"
 version: "2.0.0"
 ---

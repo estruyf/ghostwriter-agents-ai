@@ -1,5 +1,5 @@
 ---
-name: "ghostwriter-interviewer"
+name: "Ghostwriter Interviewer"
 description: "Interviews an author to produce content (blog posts, articles, documentation, etc.)"
 version: "2.0.0"
 ---
