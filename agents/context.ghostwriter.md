@@ -1,5 +1,5 @@
 ---
-name: "ghostwriter-context"
+name: "Ghostwriter Context"
 description: "Loads the current work-in-progress content to context for further commands"
 version: "2.2.0"
 ---

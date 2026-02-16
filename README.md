@@ -11,8 +11,8 @@ following the "cozy web" editorial philosophy.
 
 ## Features
 
-The **Ghostwriter Agents** consists of five specialized agents that work
-together to help you:
+The **Ghostwriter Agents** consists of six specialized agents that work together
+to help you:
 
 - **Interviewer:** Conduct structured interviews to gather raw material for
   articles.
@@ -22,6 +22,10 @@ together to help you:
 - **Voice Analyzer:** Analyze your writing style to maintain a consistent voice.
 - **Brainstormer:** Facilitate brainstorming sessions to explore ideas and
   generate actionable plans.
+- **Product Moral Compass:** Guide thoughtful decision-making before building
+  software — interviews the idea, researches existing options (open source and
+  paid), and recommends whether to build, contribute, or use an existing
+  solution.
 
 ## Quick Start
 
@@ -49,12 +53,12 @@ After installation:
 
 ## Agents
 
-### 🔄 Context Loader (`@ghostwriter-context`)
+### 🔄 Context Loader (`@"Ghostwriter Context (agent)"`)
 Loads your current work-in-progress article into context for further commands.
 
 **Use when:** Starting a new editing session or switching between drafts.
 
-### 🎤 Interviewer (`@ghostwriter-interviewer`)
+### 🎤 Interviewer (`@"Ghostwriter Interviewer (agent)"`)
 Conducts structured interviews to gather material for blog posts, articles,
 reviews, and more. Asks one question at a time, collects code snippets, error
 logs, and real-world examples.
@@ -63,13 +67,13 @@ logs, and real-world examples.
 recent work.
 
 **Workflow:**
-1. Start: `@ghostwriter-interviewer`
+1. Start: `@"Ghostwriter Interviewer (agent)"`
 2. Answer questions naturally, sharing code/logs when asked
 3. Say "stop" when finished
 4. Request transcript: "Can you provide the interview transcript?"
 5. Save as `INTERVIEW.md`
 
-### ✍️ Writer (`@ghostwriter-writer`)
+### ✍️ Writer (`@"Ghostwriter Writer (agent)"`)
 Expands working outlines or drafts into comprehensive, detailed articles while
 maintaining your voice and narrative flow.
 
@@ -82,7 +86,7 @@ use the `VOICE.md` and `INTERVIEW.md` files if present.
 - Explains *why* code does what it does
 - Maintains narrative thread
 
-### 🔍 Reviewer (`@ghostwriter-reviewer`)
+### 🔍 Reviewer (`@"Ghostwriter Reviewer (agent)"`)
 Reviews articles against editorial guidelines, providing concrete, actionable
 feedback.
 
@@ -95,7 +99,7 @@ feedback.
 - Code quality and citations
 - Missing resources section
 
-### 🎨 Voice Analyzer (`@ghostwriter-voice`)
+### 🎨 Voice Analyzer (`@"Ghostwriter Voice (agent)"`)
 Analyzes your existing writing to create a reusable style guide that other
 agents can follow.
 
@@ -109,12 +113,32 @@ profile.
 - Structure patterns
 - Save as `VOICE.md`
 
-### 💡 Brainstormer (`@ghostwriter-brainstorm`)
+### 💡 Brainstormer (`@"Ghostwriter Brainstormer (agent)"`)
 
 Facilitates brainstorming sessions to explore ideas and generate actionable
 plans.
 
 **Use when:** You need to generate ideas, outline content, or plan projects.
+
+### 🧭 Product Moral Compass (`@"Ghostwriter Product Moral Compass (agent)"`)
+Guides developers through thoughtful decision-making before building software.
+
+**Use when:** You're evaluating whether to build a new product, contribute to an
+existing project, or use an existing solution.
+
+**What it does:**
+- Asks focused questions (one per turn) to clarify the idea and the target
+  users.
+- Researches existing open source and commercial options and reports matches and
+  gaps.
+- Recommends a path: Use an existing solution, Contribute, Build, or Combine.
+
+**Quick start:**
+1. Start: `Ghostwriter Product Moral Compass (agent)`
+2. Answer the first mandatory question: "What is your app idea? What problem are
+   you trying to solve?"
+3. Continue answering one question at a time until you have a research-backed
+   recommendation.
 
 ## Editorial Philosophy
 
@@ -215,12 +239,13 @@ Agents are installed to `~/.claude/agents/`.
 
 In the Claude CLI, use the following commands to interact with agents:
 
-- `@agent-ghostwriter-interviewer`
-- `@agent-ghostwriter-writer`
-- `@agent-ghostwriter-reviewer`
-- `@agent-ghostwriter-context`
-- `@agent-ghostwriter-voice`
-- `@agent-ghostwriter-brainstorm`
+- `@"Ghostwriter Interviewer (agent)"`
+- `@"Ghostwriter Writer (agent)"`
+- `@"Ghostwriter Reviewer (agent)"`
+- `@"Ghostwriter Context (agent)"`
+- `@"Ghostwriter Voice (agent)"`
+- `@"Ghostwriter Brainstormer (agent)"`
+- `@"Ghostwriter Product Moral Compass (agent)"`
 
 <div align="center">
   <img src="assets/claude-agents.png" alt="Claude Agents" width="600">

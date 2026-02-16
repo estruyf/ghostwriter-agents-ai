@@ -1,5 +1,5 @@
 ---
-name: "ghostwriter-brainstorm"
+name: "Ghostwriter Brainstormer"
 description: "Facilitates brainstorming sessions to explore ideas and generate actionable plans"
 version: "2.2.0"
 ---

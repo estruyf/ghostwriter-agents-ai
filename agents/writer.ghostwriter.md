@@ -1,5 +1,5 @@
 ---
-name: "ghostwriter-writer"
+name: "Ghostwriter Writer"
 description: "Writes comprehensive, well-cited content based on a draft"
 version: "2.2.0"
 ---

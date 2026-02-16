@@ -6,6 +6,14 @@ The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0] - 2026-02-15
+
+### Added
+- `product-moral-compass.ghostwriter.md` — Product Moral Compass agent: guides
+  developers through decision-making before building software; performs idea
+  interviews, researches existing open source and commercial options, and
+  recommends whether to build, contribute, use, or combine solutions.
+
 ## [2.2.0] - 2026-01-14
 
 ### Added
@@ -29,7 +37,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Updated Copilot agent installation path to `~/.copilot/agents` (global)
   instead of local project folder
 
-## [2.0.0] - 2024-12-18
+## [2.0.0] - 2025-12-18
 
 ### Added
 - `--uninstall` option to remove agents from specified platforms
@@ -53,20 +61,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Updated README with uninstall command reference and examples
 - Added CHANGELOG.md to published npm package files
 
-## [1.0.4] - 2024-12-15
+## [1.0.4] - 2025-12-15
 
 ### Changed
 - Enhanced guidelines for visual artifacts in interview transcripts
 - Interviewer agent now explicitly requests screenshots, graphs, and UI
   snapshots when relevant
 
-## [1.0.3] - 2024-12-12
+## [1.0.3] - 2025-12-12
 
 ### Changed
 - Updated repository URLs in package.json to reflect correct ownership
 - Removed redundant git type from repository URL
 
-## [1.0.2] - 2024-12-12
+## [1.0.2] - 2025-12-12
 
 ### Changed
 - Renamed `ghostwriter-expander` to `ghostwriter-writer` for better clarity
@@ -75,13 +83,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 - Additional bin entry `@estruyf/ghostwriter` in package.json for easier access
 
-## [1.0.1] - 2024-12-12
+## [1.0.1] - 2025-12-12
 
 ### Changed
 - Enhanced npm publish workflow and build script for improved functionality
 - Updated npm publish command to include public access flag
 
-## [1.0.0] - 2024-12-12
+## [1.0.0] - 2025-12-12
 
 ### Added
 - Initial release of Ghostwriter Agents
